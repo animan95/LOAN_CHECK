@@ -1,0 +1,4 @@
+Model Speed Benchmark:
+LightGBM   | Train: 6.16s | Predict: 1.18s
+XGBoost    | Train: 7.7s | Predict: 0.64s
+CatBoost   | Train: 30.82s | Predict: 0.73s

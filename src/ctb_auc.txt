@@ -1,0 +1,15 @@
+✅ Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.89      1.00      0.94    320445
+           1       0.56      0.01      0.03     38420
+
+    accuracy                           0.89    358865
+   macro avg       0.73      0.51      0.49    358865
+weighted avg       0.86      0.89      0.85    358865
+
+🎯 ROC AUC Score: 0.7817245122321397
+📊 Confusion Matrix:
+ [[320031    414]
+ [ 37894    526]]
+💾 Model saved to ctb_credit_model.pkl
