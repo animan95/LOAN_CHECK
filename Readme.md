@@ -96,7 +96,7 @@ python src/shap_lgbm.py
 
 ###  SHAP Summary Plot
 
-![SHAP Summary](assets/shap_summ_plt.png)
+![SHAP Summary](shap_summ_plt.png)
 
 ---
 
