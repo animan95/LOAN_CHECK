@@ -1,11 +1,11 @@
 
-# 📊 Loan Default Risk Prediction with ML
+#  Loan Default Risk Prediction with ML
 
 This project builds an end-to-end machine learning pipeline to **predict the probability of loan default** using real-world Lending Club data. It includes data preprocessing, model training (LightGBM, XGBoost, CatBoost), SHAP-based explainability, and a deployable Streamlit app.
 
 ---
 
-## 🔍 Problem Statement
+##  Problem Statement
 
 Financial institutions need robust tools to assess **creditworthiness** of borrowers, especially in the absence of traditional credit scores. This project aims to:
 
@@ -16,7 +16,7 @@ Financial institutions need robust tools to assess **creditworthiness** of borro
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 .
@@ -41,7 +41,7 @@ Financial institutions need robust tools to assess **creditworthiness** of borro
 
 ---
 
-## 📦 Requirements
+##  Requirements
 
 ```bash
 pip install -r requirements.txt
@@ -49,7 +49,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🧪 Model Training
+##  Model Training
 
 ```bash
 python src/fil_prep.py
@@ -60,46 +60,47 @@ python src/trn_ctb.py
 
 ---
 
-## 📈 Model Comparison
+##  Model Comparison
 
 ```bash
 python src/comp_mod.py
 ```
 
-### 🔹 ROC-AUC Curves
+###  ROC-AUC Curves
 
-![ROC Curve](assets/roc_curve.png)
+![ROC Curve](roc_curve.png)
 
 ---
 
-## ⏱️ Model Timing Benchmark
+##  Model Timing Benchmark
 
 ```bash
 python src/time_mod.py
 ```
 
-### 🔹 Example Output:
+###  Example Output:
 
 Model Speed Benchmark:
-|--------------------------------------------
-|LightGBM   | Train: 6.16s  | Predict: 1.18s |
-|XGBoost    | Train: 7.7s   | Predict: 0.64s |
-|CatBoost   | Train: 30.82s | Predict: 0.73s |
-|--------------------------------------------
+| Model     | Train Time (s) | Predict Time (s) |
+|-----------|----------------|------------------|
+| LightGBM  | 6.16           | 1.18             |
+| XGBoost   | 7.70           | 0.64             |
+| CatBoost  | 30.82          | 0.73             |
 
-## 🧠 SHAP Explainability
+
+##  SHAP Explainability
 
 ```bash
 python src/shap_lgbm.py
 ```
 
-### 🔹 SHAP Summary Plot
+###  SHAP Summary Plot
 
 ![SHAP Summary](assets/shap_summ_plt.png)
 
 ---
 
-## 💻 Streamlit App
+##  Streamlit App
 
 ```bash
 streamlit run loaner.py
@@ -112,13 +113,13 @@ streamlit run loaner.py
 
 ---
 
-## 📚 Dataset Source
+##  Dataset Source
 
 [Lending Club Loan Data (Kaggle)](https://www.kaggle.com/datasets/wordsforthewise/lending-club)
 
 ---
 
-## 📌 Next Steps
+##  Next Steps
 
 - Add SHAP force plots to Streamlit
 - Enable batch CSV prediction
@@ -126,6 +127,6 @@ streamlit run loaner.py
 
 ---
 
-## 🛡️ Disclaimer
+##  Disclaimer
 
 This project is for educational purposes only and not for use in real-world lending decisions.
